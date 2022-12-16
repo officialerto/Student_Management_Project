@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentMngDBModelStoreContainer" CdmEntityContainer="StudentMngDBEntities">
+    <EntitySetMapping Name="batch">
+      <EntityTypeMapping TypeName="StudentMngDBModel.batch">
+        <MappingFragment StoreEntitySet="batch">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="batch1" ColumnName="batch" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="course">
+      <EntityTypeMapping TypeName="StudentMngDBModel.course">
+        <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="course1" ColumnName="course" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registration">
+      <EntityTypeMapping TypeName="StudentMngDBModel.registration">
+        <MappingFragment StoreEntitySet="registration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="nic" ColumnName="nic" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="batch_id" ColumnName="batch_id" />
+          <ScalarProperty Name="telno" ColumnName="telno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="StudentMngDBModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
